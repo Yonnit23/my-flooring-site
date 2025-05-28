@@ -1,0 +1,444 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.hero-btn-wrapper {
+  text-align: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  background-color: #cc0000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  background: url('assets/images/webhome.svg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #cc0000;
+}
+
+/* Services & Flooring Grids */
+.services-section {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background-color: #2b2b2b;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.15);
+  border-top: 5px solid #e63946;
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.service-card h2 {
+  color: #e63946;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #fff;
+}
+
+.flooring-card {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #e63946;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.flooring-card h2 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.flooring-card p {
+  color: #fff;
+}
+
+.flooring-card:hover {
+  transform: scale(1.03);
+}
+
+.flooring-card h2 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+/* Brands Section */
+.brands-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.brands-section h1 {
+  font-size: 36px;
+  color: #cc0000;
+  margin-bottom: 40px;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brands-grid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.brands-grid a img {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brands-grid a:hover {
+  transform: scale(1.05);
+}
+
+.brands-grid a:hover img {
+  filter: brightness(0.9);
+}
+
+/* Appointment Section */
+.appointment-section {
+  padding: 60px 20px;
+  background-color: #c0bfbf; /* slightly deeper light grey for visibility */
+  text-align: center;
+}
+
+.appointment-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.estimate-note {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.appointment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #fff; /* optional white form card */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.appointment-form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.appointment-form button {
+  margin-top: 30px;
+  padding: 14px 20px;
+  background-color: #c1121f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+  background-color: #9e0f19;
+}
+
+.contact-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #a00000;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.cta-button {
+  background-color: #a00000;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c30000;
+}
+
+.gallery-reviews-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-reviews-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Reviews */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.review-card {
+  padding: 20px;
+  border: 2px solid #b30000;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: left;
+}
+
+.review-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.review-card h3 {
+  font-size: 0.9rem;
+  color: #b30000;
+}
+
+/* Gallery & Reviews Section */
+.gallery-reviews-section {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.gallery-reviews-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #e63946;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.review-card h3 {
+  color: #e63946;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Google Reviews Button */
+.reviews-btn a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #e63946;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.reviews-btn a:hover {
+  background-color: #c02739;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(230, 57, 70, 0.4);
+}
