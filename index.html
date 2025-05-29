@@ -10,6 +10,7 @@
 
   <!-- Navbar -->
   <nav class="navbar">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
       <li><a href="#services">Services</a></li>
@@ -23,10 +24,13 @@
 
   <!-- Hero Section -->
   <section id="hero">
-  <div class="hero-btn-wrapper">
-    <a href="#appointment" class="hero-btn">Book a Free Estimate</a>
-  </div>
-</section>
+    <div class="hero-content">
+      <img src="assets/images/rgtcs.png" alt="TCS Floors Logo" class="hero-logo">
+      <p>Your trusted partner in flooring and renovation solutions</p>
+      <a href="#appointment" class="hero-btn">Book a Free Estimate</a>
+    </div>
+  </section>
+
 
   <!-- Services Section -->
   <section id="services">
@@ -238,5 +242,11 @@
 </section>
 
  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
