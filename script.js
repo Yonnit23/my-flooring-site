@@ -1,4 +1,4 @@
-const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenu = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 mobileMenu.addEventListener('click', () => {
